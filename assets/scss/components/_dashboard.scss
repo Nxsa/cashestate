@@ -456,3 +456,87 @@ table {
     text-align: right;
   }
 }
+
+/*STYLES FOR THE INVESTOR PROFILE SECTION*/
+
+.investor-block {
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+  grid-column-gap: 48px;
+}
+.investor-item {
+  width: 240px;
+  height: 120px;
+  display: block;
+  margin-bottom: 36px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  &:hover {
+    box-shadow: 4px 4px 24px 0 rgba(0, 0, 0, 0.12);
+    transform: translateY(-16px);
+  }
+  .investor-location {
+    display: flex;
+    align-items: center;
+    .flag {
+      margin-right: 4px;
+    }
+    .location-val {
+      position: relative;
+      top: 2px;
+      color: $N300;
+    }
+  }
+  .investor-id {
+    font-weight: 500;
+    color: $N400;
+    margin-bottom: 2px;
+  }
+  .investor-stake {
+    font-size: 1.6rem;
+    color: $N300;
+  }
+}
+.profile-block {
+  .box-row:last-of-type {
+    margin-bottom: 0;
+  }
+  margin-bottom: 32px;
+}
+.profile-img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 24px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  span {
+    margin-bottom: 2px;
+  }
+  .profile-name {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.25;
+    color: $N400;
+  }
+  .profile-status {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .profile-location {
+    display: flex;
+    .location-val {
+      position: relative;
+      top: 4px;
+      margin-left: 8px;
+    }
+  }
+}

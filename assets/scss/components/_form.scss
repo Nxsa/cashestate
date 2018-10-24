@@ -97,3 +97,27 @@ input[type="file"i] {
   font-weight: 500;
   font-size: 1rem;
 }
+
+.data--label {
+  @extend .form--label;
+}
+.data--val {
+  line-height: 1.43;
+}
+.data--row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  .data--val {
+    width: 50%;
+  }
+  .data--range {
+    font-weight: 500;
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+    background: $G50;
+    text-align: center;
+    line-height: 24px;
+  }
+}

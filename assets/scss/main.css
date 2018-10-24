@@ -131,8 +131,7 @@ a {
   transition: all 0.3s linear;
   font-size: 1.4rem;
   color: #f17422;
-  font-weight: 500;
-  user-select: none; }
+  font-weight: 500; }
 
 a:visited,
 a:hover,
@@ -222,12 +221,6 @@ button:focus {
   .btn--edit:visited, .btn--edit:focus, .btn--edit:active {
     color: #ffffff; }
 
-.success {
-  color: #36b37f; }
-
-.error {
-  color: #b33636; }
-
 .btn--form {
   display: inline-block;
   align-self: center; }
@@ -240,7 +233,8 @@ button:focus {
   margin-right: auto; }
 
 .flex {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .btn-group {
   display: flex; }
@@ -831,75 +825,6 @@ table td {
   .investor-filter--table .amount-val {
     text-align: right; }
 
-/*STYLES FOR THE INVESTOR PROFILE SECTION*/
-.investor-block {
-  display: grid;
-  grid-template-columns: repeat(4, 240px);
-  grid-column-gap: 48px; }
-
-.investor-item {
-  width: 240px;
-  height: 120px;
-  display: block;
-  margin-bottom: 36px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column; }
-  .investor-item:hover {
-    box-shadow: 4px 4px 24px 0 rgba(0, 0, 0, 0.12);
-    transform: translateY(-16px); }
-  .investor-item .investor-location {
-    display: flex;
-    align-items: center; }
-    .investor-item .investor-location .flag {
-      margin-right: 4px; }
-    .investor-item .investor-location .location-val {
-      position: relative;
-      top: 2px;
-      color: #737a8a; }
-  .investor-item .investor-id {
-    font-weight: 500;
-    color: #454e62;
-    margin-bottom: 2px; }
-  .investor-item .investor-stake {
-    font-size: 1.6rem;
-    color: #737a8a; }
-
-.profile-block {
-  margin-bottom: 32px; }
-  .profile-block .box-row:last-of-type {
-    margin-bottom: 0; }
-
-.profile-img {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-right: 24px; }
-  .profile-img img {
-    height: 100%;
-    width: 100%; }
-
-.profile-info {
-  display: flex;
-  flex-direction: column; }
-  .profile-info span {
-    margin-bottom: 2px; }
-  .profile-info .profile-name {
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.25;
-    color: #454e62; }
-  .profile-info .profile-status {
-    text-transform: uppercase;
-    font-weight: 500; }
-  .profile-info .profile-location {
-    display: flex; }
-    .profile-info .profile-location .location-val {
-      position: relative;
-      top: 4px;
-      margin-left: 8px; }
-
 .form--input,
 .form--select {
   border-radius: 2px;
@@ -937,7 +862,7 @@ table td {
     border: 1px solid #f17422;
     box-shadow: none; }
 
-.form--label, .data--label {
+.form--label {
   font-weight: 500;
   color: #737a8a;
   margin-bottom: 2px; }
@@ -995,23 +920,5 @@ input[type="file"i] {
   color: #737a8a;
   font-weight: 500;
   font-size: 1rem; }
-
-.data--val {
-  line-height: 1.43; }
-
-.data--row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px; }
-  .data--row .data--val {
-    width: 50%; }
-  .data--row .data--range {
-    font-weight: 500;
-    width: 24px;
-    height: 24px;
-    border-radius: 2px;
-    background: #d6efe5;
-    text-align: center;
-    line-height: 24px; }
 
 /*# sourceMappingURL=main.css.map */

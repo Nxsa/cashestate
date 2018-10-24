@@ -65,6 +65,7 @@ a {
   font-size: 1.4rem;
   color: $O400;
   font-weight: 500;
+  user-select: none;
 }
 
 a:visited,
@@ -185,7 +186,12 @@ button:focus {
     color: $N0;
   }
 }
-
+.success {
+  color: $G400;
+}
+.error {
+  color: $R400;
+}
 .btn--form {
   display: inline-block;
   align-self: center;
@@ -202,7 +208,6 @@ button:focus {
 
 .flex {
   display: flex;
-  flex-wrap: wrap;
 }
 .btn-group {
   display: flex;
